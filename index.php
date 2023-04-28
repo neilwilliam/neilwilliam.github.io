@@ -8,7 +8,7 @@
   $phone = $_POST['tel']; //getting customer Phome number
   $subject = $_POST['subject']; //getting subject line from client
   $subject2 = "Thanks for Contacting us! | Neils Sites"; // For customer confirmation
-  $body = file_get_contents("/email-templates/contact.php");
+  $body = file_get_contents("./contact.php");
   $head = "MIME-Version: 1.0\r\n";
   $head .= "Content-type: text/html; charset=utf-8";
   
